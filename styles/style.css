@@ -1,0 +1,1058 @@
+/* ============== GLOBAL STYLES ============== */
+
+body {
+  font-family: "Playfair Display", serif;
+  color: rgb(91 90 90);
+}
+
+.description {
+  text-transform: uppercase;
+  color: rgb(181 177 170);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.brand-icon {
+  text-decoration: none;
+  color: rgb(181 177 170);
+}
+
+.brand-icon:hover {
+  color: rgb(91 90 90);
+}
+
+.brand-icon_dark {
+  text-decoration: none;
+  color: rgb(91 90 90);
+}
+
+.brand-icon_dark:hover {
+  color: rgb(42, 42, 42);
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* ============== NAVIGATION ============== */
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0 70px 0;
+}
+
+.navigation__buttons-container {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgb(93 93 93);
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: rgb(42, 42, 42);
+}
+
+/* ============== MAIN ============== */
+.slider {
+  width: 1060px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slider__navigation {
+  position: relative;
+  width: 168px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.bar:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -75%;
+}
+
+/* ============== INFO ============== */
+
+.info {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ============== PHOTODIARY ============== */
+
+.photodiary {
+  max-width: 660px;
+  margin-left: 80px;
+}
+
+.photodiary__title {
+  font-size: 32px;
+  margin: 28px 0 28px 0;
+}
+
+.photodiary__text {
+  margin-bottom: 28px;
+  line-height: 22px;
+}
+
+.photodiary__img {
+  margin-top: 50px;
+  height: 495px;
+}
+
+.photodiary__description {
+  font-weight: 300;
+  font-style: italic;
+  margin: 55px 20px 30px 20px;
+}
+
+.share {
+  margin-top: 80px;
+  display: flex;
+  justify-content: end;
+  color: rgb(181 177 170);
+}
+
+.share__text {
+  margin-right: 4px;
+}
+
+.share__icon {
+  margin-left: 14px;
+}
+
+/* ============== ABOUT ============== */
+
+.about {
+  width: 270px;
+  margin-left: 40px;
+}
+
+.about__sticky-container {
+  position: sticky;
+  top: 0px;
+}
+
+.about__image {
+  max-width: 270px;
+}
+
+.about__title {
+  font-size: 28px;
+  margin: 28px 0 20px 0;
+}
+
+.about__text {
+  font-size: 14px;
+  margin-bottom: 22px;
+  line-height: 20px;
+}
+
+.about_icons {
+  width: 78px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: rgb(181 177 170);
+}
+
+.posts {
+  margin-top: 32px;
+}
+
+.posts__container {
+  margin: 22px 0 0 18px;
+}
+
+.posts__item::marker {
+  color: rgb(181 177 170);
+}
+
+.post {
+  margin: 0 0 16px 20px;
+  list-style-type: none;
+}
+
+.post__title {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(91 90 90);
+}
+
+.post__comment {
+  display: block;
+  margin-top: 14px;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(181 177 170);
+}
+
+.posts__banner {
+  margin-top: 34px;
+}
+
+/* ============== RECOMEDNATION ============== */
+
+.recomendations {
+  margin-top: 120px;
+  height: 364px;
+  background-color: rgb(246, 245, 245);
+  padding: 70px 0 0 0;
+}
+
+.recomendations__container {
+  width: 900px;
+}
+
+.recomendations__content-container {
+  margin: 0 -18px 0 62px;
+}
+
+.recomendations__title {
+  margin: 0 0 40px 18px;
+}
+
+.recomendations__items {
+  display: flex;
+}
+
+.recomendations__item {
+  margin: 0 10px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.recomendations__item:hover {
+  background-color: rgb(229, 229, 229);
+}
+
+.recomendations__image {
+  height: 184px;
+}
+
+.recomendations__description {
+  font-size: 20px;
+  color: rgb(93 93 93);
+  margin-top: 14px;
+}
+
+/* ============== COMMENTS ============== */
+
+.comments {
+  padding-top: 65px;
+}
+
+.comments__content-container {
+  margin-left: 80px;
+  width: 900px;
+}
+
+.comments__container {
+  margin-top: 40px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.comment__avatar {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.comment__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.comment__info {
+  padding-left: 34px;
+}
+
+.comment__name {
+  margin-bottom: 14px;
+}
+
+.comment__text {
+  word-wrap: break-word;
+  line-height: 22px;
+}
+
+.comment__button {
+  margin-top: 25px;
+  border: 0;
+  background-color: white;
+  padding: 0;
+}
+
+.user-form {
+  display: flex;
+}
+
+.user-form__input {
+  font-family: "Playfair Display", serif;
+  margin-left: 34px;
+  width: 100%;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 5px;
+  padding: 0 32px;
+}
+
+.user-form__input::placeholder {
+  text-transform: uppercase;
+  color: rgb(181 177 170);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.comments__social-media {
+  margin: 40px 0 105px 0;
+  display: flex;
+  justify-content: end;
+}
+
+.comments__description {
+  margin-right: 20px;
+}
+
+.comments__social-media-icon {
+  margin-left: 15px;
+}
+
+/* ============== FOOTER ============== */
+
+.footer {
+  background-color: rgb(246, 245, 245);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.footer__info {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info-text {
+  color: rgb(93 93 93);
+  text-decoration: none;
+}
+
+.footer__info-text:hover {
+  color: rgb(42, 42, 42);
+}
+
+.footer__links {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ============================ MEDIA ============================ */
+
+@media (max-width: 1200px) {
+  /* ============== GLOBAL STYLES ============== */
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  /* ============== NAVIGATION ============== */
+  .navigation {
+    max-width: 718px;
+    padding: 70px 25px 70px 25px;
+  }
+
+  .navigation__buttons-container {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ============== MAIN ============== */
+
+  .slider {
+    width: 768px;
+    height: 362px;
+  }
+
+  /* ============== INFO ============== */
+
+  .info {
+    width: 718px;
+    padding: 0 25px;
+  }
+
+  /* ============== PHOTODIARY ============== */
+
+  .photodiary {
+    margin: 0;
+    max-width: 460px;
+  }
+
+  .photodiary__image {
+    margin-top: 50px;
+    height: 323px;
+    width: 420px;
+  }
+
+  /* ============== ABOUT ============== */
+
+  .about__sticky-container {
+    position: sticky;
+    top: 15px;
+  }
+
+  .about {
+    width: 200px;
+    margin-left: 40px;
+  }
+
+  .about__image {
+    width: 200px;
+  }
+
+  .about__title {
+    margin: 18px 0 12px 0;
+  }
+
+  .about__text {
+    margin-bottom: 12px;
+  }
+
+  .posts {
+    margin-top: 20px;
+  }
+
+  .posts__container {
+    margin: 20px 0 0 12px;
+  }
+
+  .posts__item::marker {
+    color: rgb(181 177 170);
+  }
+
+  .post {
+    margin: 0 0 12px 12px;
+    list-style-type: none;
+  }
+
+  .post__title {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(91 90 90);
+  }
+
+  .post__comment {
+    display: block;
+    margin-top: 10px;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(181 177 170);
+  }
+
+  .posts__banner {
+    margin-top: 34px;
+  }
+
+  /* ============== RECOMEDNATION ============== */
+
+  .recomendations {
+    height: 100%;
+    padding: 70px 0 50px 0;
+  }
+
+  .recomendations__content-container {
+    margin: 0;
+    padding: 0 25px;
+  }
+
+  .recomendations__title {
+    margin: 0 0 40px 0px;
+  }
+
+  .recomendations__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .recomendations__item {
+    margin: 0;
+  }
+
+  /* ============== COMMENTS ============== */
+
+  .comments__content-container {
+    margin: 0;
+    width: 718px;
+    padding: 0 25px;
+  }
+
+  .comments__container {
+    margin-top: 40px;
+  }
+
+  .comment {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .comment__text {
+    width: 614px;
+  }
+
+  /* ============== FOOTER ============== */
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 25px;
+  }
+}
+
+/* ============================ MEDIA ============================ */
+
+@media (max-width: 768px) {
+  /* ============== GLOBAL STYLES ============== */
+  .container {
+    max-width: 420px;
+  }
+
+  /* ============== NAVIGATION ============== */
+  .navigation {
+    max-width: 390px;
+    padding: 30px 15px 30px 15px;
+  }
+
+  .navigation__logo {
+    width: 72px;
+  }
+
+  .navigation__buttons-container {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__link {
+    font-size: 14px;
+  }
+
+  /* ============== MAIN ============== */
+
+  .slider {
+    width: 420px;
+    height: 199px;
+  }
+
+  /* ============== INFO ============== */
+
+  .info {
+    margin-top: 30px;
+    width: 390px;
+    padding: 0 15px;
+    flex-direction: column;
+  }
+
+  /* ============== PHOTODIARY ============== */
+
+  .photodiary {
+    margin: 0;
+    max-width: 420px;
+  }
+
+  .photodiary__image {
+    margin-top: 30px;
+    height: 323px;
+    width: 420px;
+  }
+
+  .photodiary__title {
+    margin: 30px 0;
+  }
+
+  .photodiary__description {
+    margin: 30px 20px;
+  }
+
+  .share {
+    margin: 30px 0;
+  }
+
+  /* ============== ABOUT ============== */
+
+  .about__sticky-container {
+    position: sticky;
+    top: 15px;
+  }
+
+  .about {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .about__image {
+    text-align: center;
+    width: 100%;
+    margin: 0 60px;
+  }
+
+  .about__title {
+    margin: 18px 0 12px 0;
+  }
+
+  .about__text {
+    margin-bottom: 12px;
+  }
+
+  .posts {
+    margin-top: 32px;
+  }
+
+  .posts__container {
+    margin: 22px 0 0 18px;
+  }
+
+  .posts__item::marker {
+    color: rgb(181 177 170);
+  }
+
+  .post {
+    margin: 0 0 16px 20px;
+    list-style-type: none;
+  }
+
+  .post__title {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(91 90 90);
+  }
+
+  .post__comment {
+    display: block;
+    margin-top: 14px;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(181 177 170);
+  }
+
+  .posts__banner {
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  /* ============== RECOMEDNATION ============== */
+
+  .recomendations {
+    margin-top: 30px;
+    height: 100%;
+    padding: 30px 0 30px 0;
+  }
+
+  .recomendations__content-container {
+    margin: 0;
+    padding: 0 25px;
+  }
+
+  .recomendations__title {
+    text-align: center;
+  }
+
+  .recomendations__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recomendations__item {
+    margin: 10px 0 0 0;
+  }
+
+  .recomendations__description {
+    text-align: center;
+  }
+
+  /* ============== COMMENTS ============== */
+  .comments {
+    padding-top: 30px;
+  }
+
+  .comments__content-container {
+    margin: 0;
+    width: 390px;
+    padding: 0 15px;
+  }
+
+  .comments__container {
+    margin-top: 30px;
+  }
+
+  .comment {
+    margin-bottom: 30px;
+  }
+
+  .comment__avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .comment__info {
+    padding-left: 15px;
+  }
+
+  .comment__name {
+    margin-bottom: 10px;
+  }
+
+  .comment__text {
+    width: 334px;
+  }
+
+  .comment__button {
+    margin-top: 15px;
+  }
+
+  .comments__social-media {
+    margin: 30px 0;
+  }
+
+  .user-form__input {
+    margin-left: 10px;
+    padding: 2px 15px;
+  }
+
+  .user-form__input::placeholder {
+    display: block;
+    text-transform: uppercase;
+    color: rgb(181 177 170);
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  /* ============== FOOTER ============== */
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 15px;
+  }
+}
+
+/* ============================ MEDIA ============================ */
+
+@media (max-width: 420px) {
+  /* ============== GLOBAL STYLES ============== */
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  /* ============== NAVIGATION ============== */
+  .navigation {
+    width: 260px;
+    padding: 20px 10px 20px 10px;
+    align-items: center;
+  }
+
+  .navigation__logo {
+    margin-top: 4px;
+    width: 52px;
+  }
+
+  .navigation__buttons-container {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .navigation__link-container {
+    margin-top: 5px;
+  }
+
+  .navigation__link {
+    font-size: 14px;
+  }
+
+  /* ============== MAIN ============== */
+
+  .slider {
+    width: 280px;
+    height: 131px;
+  }
+
+  /* ============== INFO ============== */
+
+  .info {
+    margin-top: 20px;
+    width: 260px;
+    padding: 0 10px;
+    flex-direction: column;
+  }
+
+  /* ============== PHOTODIARY ============== */
+
+  .photodiary {
+    margin: 0;
+    max-width: 260px;
+  }
+
+  .photodiary__image {
+    margin-top: 10px;
+    height: 199px;
+    width: 260px;
+  }
+
+  .photodiary__title {
+    margin: 20px 0;
+  }
+
+  .photodiary__description {
+    margin: 20px 20px;
+  }
+
+  .share {
+    margin: 20px 0;
+  }
+
+  /* ============== ABOUT ============== */
+  .about {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .about__image {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about__title {
+    margin: 18px 0 12px 0;
+  }
+
+  .about__text {
+    margin-bottom: 12px;
+  }
+
+  .posts {
+    margin-top: 32px;
+  }
+
+  .posts__container {
+    margin: 22px 0 0 18px;
+  }
+
+  .posts__item::marker {
+    color: rgb(181 177 170);
+  }
+
+  .post {
+    margin: 0 0 16px 20px;
+    list-style-type: none;
+  }
+
+  .post__title {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(91 90 90);
+  }
+
+  .post__comment {
+    display: block;
+    margin-top: 14px;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(181 177 170);
+  }
+
+  .posts__banner {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .posts__banner-image {
+    width: 260px;
+  }
+
+  /* ============== RECOMEDNATION ============== */
+
+  .recomendations {
+    margin-top: 20px;
+    height: 100%;
+    padding: 20px 0 20px 0;
+  }
+
+  .recomendations__content-container {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .recomendations__title {
+    text-align: center;
+  }
+
+  .recomendations__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recomendations__item {
+    margin: 10px 0 0 0;
+  }
+
+  .recomendations__image {
+    height: 142px;
+  }
+
+  .recomendations__description {
+    text-align: center;
+  }
+
+  /* ============== COMMENTS ============== */
+  .comments {
+    padding-top: 20px;
+  }
+
+  .comments__content-container {
+    margin: 0;
+    width: 260px;
+    padding: 0 10px;
+  }
+
+  .comments__container {
+    margin-top: 20px;
+  }
+
+  .comment {
+    margin-bottom: 20px;
+  }
+
+  .comment__avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .comment__info {
+    padding-left: 10px;
+  }
+
+  .comment__name {
+    margin-bottom: 10px;
+  }
+
+  .comment__text {
+    width: 220px;
+  }
+
+  .comment__button {
+    margin-top: 10px;
+  }
+
+  .comments__social-media {
+    margin: 20px 0;
+  }
+
+  .user-form__input {
+    margin-left: 10px;
+    padding: 3px 15px;
+  }
+
+  .comments__description {
+    margin-right: 0px;
+  }
+
+  /* ============== FOOTER ============== */
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+  }
+
+  .footer__info {
+    width: 100px;
+    line-height: 20px;
+    word-wrap: break-word;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
